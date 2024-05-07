@@ -644,6 +644,12 @@ Version      : 1.0
   font-weight: 400;
   font-family: "Poppins", sans-serif;
 }
+.blog-article span.has-line {
+  padding-left: 32px;
+  color: #272343;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
 
 .blog-intro-area h3 {
   margin-bottom: 20px;
@@ -1362,6 +1368,9 @@ Version      : 1.0
 }
 
 .blog-intro-area span.has-line a {
+  color: #272343;
+}
+.blog-article span.has-line a {
   color: #272343;
 }
 
