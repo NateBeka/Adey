@@ -1837,24 +1837,24 @@ footer .copy-right p a:hover {
 /*# sourceMappingURL=main.css.map */
 
 
-.progress-ring {
+.progress-ring1 {
   position: relative;
   width: 200px;
   height: 200px;
   cursor: pointer;
 }
 
-.progress-circle {
+.progress-circle1 {
   transform: rotate(-90deg);
 }
 
-.progress-circle-bg {
+.progress-circle-bg1 {
   fill: none;
   stroke: rgba(0, 0, 0, 0.1);
   stroke-width: 20;
 }
 
-.progress-circle-fill {
+.progress-circle-fill1 {
   fill: none;
   stroke: #4caf50;
   stroke-width: 20;
@@ -1863,7 +1863,7 @@ footer .copy-right p a:hover {
   transition: stroke-dashoffset 0.5s ease-in-out;
 }
 
-.progress-text {
+.progress-text1 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1875,7 +1875,113 @@ footer .copy-right p a:hover {
   transition: opacity 0.5s ease-in-out;
 }
 
-.progress-ring:hover .progress-circle-fill {
+.progress-ring1:hover .progress-circle-fill1 {
+  animation: fill-animation 2s forwards;
+}
+
+@keyframes fill-animation {
+  from {
+      stroke-dashoffset: 565;
+  }
+  to {
+      stroke-dashoffset: ((100-progress)/ 100*565);
+  }
+}
+/*# sourceMappingURL=main.css.map */
+
+
+.progress-ring2 {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+}
+
+.progress-circle2 {
+  transform: rotate(-90deg);
+}
+
+.progress-circle-bg2 {
+  fill: none;
+  stroke: rgba(0, 0, 0, 0.1);
+  stroke-width: 20;
+}
+
+.progress-circle-fill2 {
+  fill: none;
+  stroke: #4caf50;
+  stroke-width: 20;
+  stroke-dasharray: 565;
+  stroke-dashoffset: 565;
+  transition: stroke-dashoffset 0.5s ease-in-out;
+}
+
+.progress-text2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
+  color: #4caf50;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.progress-ring2:hover .progress-circle-fill2 {
+  animation: fill-animation 2s forwards;
+}
+
+@keyframes fill-animation {
+  from {
+      stroke-dashoffset: 565;
+  }
+  to {
+      stroke-dashoffset: ((100-progress)/ 100*565);
+  }
+}
+/*# sourceMappingURL=main.css.map */
+
+
+.progress-ring3 {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+}
+
+.progress-circle3 {
+  transform: rotate(-90deg);
+}
+
+.progress-circle-bg3 {
+  fill: none;
+  stroke: rgba(0, 0, 0, 0.1);
+  stroke-width: 20;
+}
+
+.progress-circle-fill3 {
+  fill: none;
+  stroke: #4caf50;
+  stroke-width: 20;
+  stroke-dasharray: 565;
+  stroke-dashoffset: 565;
+  transition: stroke-dashoffset 0.5s ease-in-out;
+}
+
+.progress-text3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
+  color: #4caf50;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.progress-ring3:hover .progress-circle-fill3 {
   animation: fill-animation 2s forwards;
 }
 
@@ -1888,3 +1994,31 @@ footer .copy-right p a:hover {
   }
 }
 
+
+.data-container {
+  display: flex; /* Arrange sections side-by-side */
+  justify-content: space-between; /* Distribute sections evenly */
+  width: 100%; /* Adjust width as needed */
+}
+
+.data-section {
+  text-align: center; /* Center content within sections */
+}
+
+.data-percent {
+  font-weight: bold;
+  font-size: 20px;
+  color: #3498db; /* Example color, adjust as needed */
+}
+
+.data-label {
+  margin-top: 5px;
+  color: #333; /* Example color, adjust as needed */
+}
+
+.data-bar {
+  background-color: #f1f1f1; /* Example color, adjust as needed */
+  width: 50px; /* Adjust width as needed */
+  height: 10px; /* Adjust height as needed */
+  margin-top: 5px; /* Add spacing from label */
+}
