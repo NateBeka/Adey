@@ -1552,8 +1552,8 @@ footer {
   width: 100%;
 }
 .footer-img {
-  width: 50px; /* Adjust size as needed */
-  margin: 10px; /* Adjust spacing as needed */
+  width: 100px; /* Adjust size as needed */
+  margin: 50px; /* Adjust spacing as needed */
 }
 
 footer .footer-info p {
